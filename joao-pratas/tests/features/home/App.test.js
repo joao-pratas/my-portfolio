@@ -6,7 +6,9 @@ import App from 'src/features/home/App';
 describe('features/home/App', () => {
   it('should render node with correct class name', () => {
     const renderedComponent = shallow(
-      <App />
+      <ReactSmoothScroll>
+        <App />
+      </ReactSmoothScroll>
     );
 
     expect(

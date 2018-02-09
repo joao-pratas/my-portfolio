@@ -15,16 +15,16 @@ export class DefaultPage extends Component {
   render() {
     const listItems = [{
       name: "Contact",
-      url: "#"
-    },{
-      name: 'Home',
-      url: '/home'
-    },{
-      name: 'About',
-      url: '/about'
+      url: "#contact"
     },{
       name: 'Portfolio',
-      url: '/portfolio'
+      url: '#portfolio'
+    },{
+      name: 'About',
+      url: '#about'
+    },{
+      name: 'Home',
+      url: '#home'
     }]
     return (
       <div className="home-default-page">
@@ -34,8 +34,12 @@ export class DefaultPage extends Component {
             <List items={listItems} />
           </div>
          </div>
-         <div id="home"></div>
+         <div id="home">
+          <h1>Joao Pratas</h1>
+         </div>
          <div id="about"></div>
+         <div id="portfolio"></div>
+         <div id="contact"></div>
       </div>
     );
   }

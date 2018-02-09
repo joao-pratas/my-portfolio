@@ -1,9 +1,14 @@
 @import '../../styles/mixins';
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900'); /*-----GOOGLE FONT HEADERS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto'); /*-----GOOGLE FONT ROBOTO-----*/
 
 .home-default-page {
   padding: 0;
   margin: 0;
   
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
 
   #main-menu {
     width: 100%;
@@ -69,5 +74,17 @@
     width:100%;
     height: 100vh;
     background: aqua;
+  }
+
+  #portfolio {
+    width:100%;
+    height: 100vh;
+    background: white;
+  }
+
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background: #000;
   }
 }
