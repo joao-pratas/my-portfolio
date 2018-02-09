@@ -1,5 +1,6 @@
 import {
   DefaultPage,
+  Home,
 } from './';
 
 export default {
@@ -11,5 +12,6 @@ export default {
       component: DefaultPage,
       isIndex: true,
     },
+    { path: 'home', name: 'Home', component: Home },
   ],
 };
